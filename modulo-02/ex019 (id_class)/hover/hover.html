@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de hover</title>
+    <style>
+        div > p{
+            display: none;
+        }
+        div:hover > p{
+            display: block;
+            color: rgb(252, 252, 252);
+            background-color: rgb(255, 140, 0);
+            width: 120px;
+        }
+        div:hover{
+            font-weight: bolder;
+            color: rgb(0, 0, 0);
+        }
+        p:active{
+            color: blue;
+        }
+        div#my{
+            width: 200px;
+            height: 100px;
+            background-color: aqua;
+            font-size: 4em;
+        }
+        div#my:focus{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de hover</h1>
+    <p>Passe o mouse sobre o texto</p>
+    <div>
+        |AQUI|
+        <p>POWWWWW</p>
+    </div>
+    <p>Clique aqui para mais informações</p>
+    <div id="my">OI</div>        
+</body>
+</html>
